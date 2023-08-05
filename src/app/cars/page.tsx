@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import getCars from "../data/cars-data";
+import Image from "next/image";
 
 const cars = getCars();
 
@@ -67,9 +68,12 @@ export default function Cars() {
         {filteredCars.map((car, i) => (
           <div key={i} className="card bg-base-200 shadow-xl">
             <figure>
-              <img
+              <Image
                 src={car.imageUrl}
                 alt={`${car.brand} ${car.model}`}
+                width={0}
+                height={0}
+                sizes="100vw"
                 className="object-cover w-full h-48"
               />
             </figure>
