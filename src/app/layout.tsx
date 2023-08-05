@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import getBussinessInfo from "./data/bussiness-info";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const bussInfo = getBussinessInfo();
@@ -22,8 +23,8 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <body className={inter.className}>
         <Navbar />
-
         {children}
+        <Footer />
       </body>
     </html>
   );
