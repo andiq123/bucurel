@@ -4,7 +4,13 @@ import Intro from "./components/Intro";
 
 export default function Home() {
   return (
-    <main>
+    <main
+      style={{
+        backgroundImage: 'url("/background.jpg")',
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <Intro />
       <About />
       <Contact />

@@ -12,7 +12,7 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="navbar bg-base-200 justify-center">
+    <nav className="navbar justify-center">
       <div className="flex w-full justify-between">
         <Link href="/">
           <button className="btn btn-ghost normal-case text-xl">
