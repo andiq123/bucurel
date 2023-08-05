@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import getBussinessInfo from "./data/bussiness-info";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 const bussInfo = getBussinessInfo();
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
