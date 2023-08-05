@@ -8,11 +8,12 @@ type Props = {};
 const businessInfo = getBussinessInfo();
 
 export default function Intro({}: Props) {
-  const [imageWidth, setImageWidth] = useState(400);
+  const defaultWidth = 300;
+  const [imageWidth, setImageWidth] = useState(defaultWidth);
 
   useEffect(() => {
     const handleResize = () => {
-      const newWidth = window.innerWidth >= 768 ? 500 : 400;
+      const newWidth = window.innerWidth >= 768 ? 500 : defaultWidth;
       setImageWidth(newWidth);
     };
 
