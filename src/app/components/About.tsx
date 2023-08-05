@@ -13,10 +13,10 @@ export default function AboutDaisy() {
 
         <div className="bg-base-100 shadow-xl rounded-box p-8">
           <p>
-            Siamo un'azienda specializzata nella vendita di automobili di alta
-            qualità. La nostra missione è quella di offrire ai nostri clienti
-            un'esperienza di acquisto eccezionale, fornendo veicoli affidabili,
-            sicuri e di lusso a prezzi competitivi.
+            Siamo un&apos;azienda specializzata nella vendita di automobili di
+            alta qualità. La nostra missione è quella di offrire ai nostri
+            clienti un&apos;esperienza di acquisto eccezionale, fornendo veicoli
+            affidabili, sicuri e di lusso a prezzi competitivi.
           </p>
 
           <p className="mt-4">
