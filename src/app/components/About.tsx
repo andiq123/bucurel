@@ -2,8 +2,11 @@ import React from "react";
 
 export default function AboutDaisy() {
   return (
-    <div className="relative overflow-hidden" id="about">
-      <div className="absolute top-44 -left-10 w-40 h-40 bg-gradient-to-br from-blue-500 to-pink-500 rotate-12 rounded-xl -z-10"></div>
+    <div
+      className="relative overflow-hidden md:border-none border-t-8 border-primary-content"
+      id="about"
+    >
+      <div className="absolute md:top-44 top-20 md:-left-10 -left-20 w-40 h-40 bg-gradient-to-br from-blue-500 to-pink-500 rotate-12 rounded-xl -z-10 opacity-50"></div>
 
       <div className="container max-w-4xl mx-auto py-16">
         <h1 className="text-4xl font-bold p-5 mb-4 bg-gray-200 rounded-2xl w-fit mx-auto">

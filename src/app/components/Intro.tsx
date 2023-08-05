@@ -1,38 +1,19 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import getBussinessInfo from "../data/bussiness-info";
 import Link from "next/link";
 import Image from "next/image";
 
 type Props = {};
-const businessInfo = getBussinessInfo();
 
 export default function Intro({}: Props) {
-  const defaultWidth = 300;
-  const [imageWidth, setImageWidth] = useState(defaultWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const newWidth = window.innerWidth >= 768 ? 500 : defaultWidth;
-      setImageWidth(newWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const width = window.innerWidth >= 768 ? 500 : 300;
 
   return (
-    <div className="hero py-52" id="intro">
+    <div className="hero py-52 slide-up" id="intro">
       <div className="hero-content flex-col lg:flex-row-reverse text-center -mt-28 bg-base-200 bg-opacity-20 backdrop-blur-lg">
         <Image
           src="/cardealer.jpg"
-          width={imageWidth}
+          width={width}
           height={500}
           alt="dealer"
           className="max-w-xl rounded-xl shadow-2xl bg-cover"
