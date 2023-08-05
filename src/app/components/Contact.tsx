@@ -8,7 +8,7 @@ const address = indirizzo + ", " + comune + ", " + provincia + ", " + cap;
 export default function ContactDesign() {
   return (
     <div className="p-10 bg-cover" id="contact">
-      <h1 className="text-3xl font-bold mb-5 w-fit p-5 mx-auto bg-slate-200 rounded-xl">
+      <h1 className="text-3xl font-bold mb-5 w-fit p-5 mx-auto bg-gray-200 rounded-xl">
         Dove Trovarci
       </h1>
       <p className="mt-5 py-5 font-bold">Il nostro indirizzo è: {address}</p>
